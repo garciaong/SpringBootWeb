@@ -6,18 +6,19 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.google.common.collect.Lists;
 import com.springboot.web.mvc.entity.Product;
 import com.springboot.web.mvc.repository.ProductRepository;
 
 @Service
 public class ProductService {
 	
-//	@Autowired
-//    private ProductRepository repo;
+	@Autowired
+    private ProductRepository repo;
 	
 	public List<Product> getAllProducts() {
-		return mockData();
-		//return Lists.newArrayList(repo.findAll());
+		//return mockData();
+		return Lists.newArrayList(repo.findAll());
 	}
 	
 	private List<Product> mockData(){

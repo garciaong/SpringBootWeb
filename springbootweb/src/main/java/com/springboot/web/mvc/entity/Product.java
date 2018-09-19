@@ -1,23 +1,23 @@
 package com.springboot.web.mvc.entity;
 
-//import javax.persistence.Column;
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
-//import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "product")
+@Entity
+@Table(name = "product")
 public class Product {
 
-//	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
-//	@Column(name = "id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private Integer id;
-//	@Column(name = "name")
+	@Column(name = "name")
 	private String name;
-//	@Column(name = "description")
+	@Column(name = "description")
 	private String description;
 	
 	public Integer getId() {

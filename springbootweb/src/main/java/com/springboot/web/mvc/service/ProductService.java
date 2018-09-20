@@ -20,21 +20,4 @@ public class ProductService {
 		//return mockData();
 		return Lists.newArrayList(repo.findAll());
 	}
-	
-	private List<Product> mockData(){
-		List<Product> products = new ArrayList<Product>();
-		Product product1 = new Product();
-		product1.setId(new Integer(1));
-		product1.setName("First");
-		product1.setDescription("First Item");
-		products.add(product1);
-		
-		Product product2 = new Product();
-		product2.setId(new Integer(2));
-		product2.setName("Second");
-		product2.setDescription("Second Item");
-		products.add(product2);
-		
-		return products;
-	}
 }

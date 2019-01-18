@@ -1,7 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!DOCTYPE html>
 <html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:spring="http://www.springframework.org/tags"
+      xmlns:form="http://www.springframework.org/tags/form">
 <head>
     <title>Spring Security Example</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,7 +23,7 @@
 			</div>
 			<div class="form-group">
 				<label for="pwd">Password:</label> <input type="password"
-					class="form-control" id="pwd" name="password"/>
+					class="form-control" id="password" name="password"/>
 			</div>
 
 			<button type="submit" class="btn btn-success">Submit</button>

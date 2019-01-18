@@ -33,4 +33,15 @@ public class ProductController {
 		return "products";
 	}
 	
+	@RequestMapping(value="/admin", method=RequestMethod.GET)
+	public String getAdminAllProducts(Model model) {
+		log.info("Retrieving data from service layer");
+		List<Product> products = service.getAllProducts();
+		for(Product product:products) {
+			log.info("[Name:"+product.getName()+"],[Description:"+product.getDescription()+"]");
+		}
+		model.addAttribute("products", products);
+		return "admin_products";
+	}
+	
 }
